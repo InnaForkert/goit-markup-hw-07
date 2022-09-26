@@ -67,6 +67,21 @@ img {
   padding-bottom: 94px;
 }
 
+/* hidden */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Header */
 
 .page-header {
@@ -227,21 +242,6 @@ img {
   cursor: pointer;
 }
 
-/* hidden headings */
-
-.hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 /* features section */
 
 .features {
@@ -250,16 +250,26 @@ img {
   padding-bottom: 0;
 }
 
-.features-subsection {
+.features__item {
   width: 270px;
 }
 
-.features-subsection > .icon {
-  background-color: var(--grey-button);
-  margin-bottom: 30px;
+.features__icon {
+  width: 70px;
+  height: 70px;
 }
 
-.features-heading {
+.features__img {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: var(--grey-button);
+}
+
+.features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -269,7 +279,7 @@ img {
   color: var(--black-text);
 }
 
-.features-paragraph {
+.features__text {
   line-height: 1.71;
 }
 
@@ -714,21 +724,6 @@ img {
 .icon.phone {
   width: 10px;
   height: 16px;
-}
-
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.icon-container {
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-
-  background-color: var(--grey-button);
 }
 
 .social-media-icon {
