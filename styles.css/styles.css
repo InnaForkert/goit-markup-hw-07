@@ -285,7 +285,9 @@ img {
 
 /* activities section*/
 
-.activities__title {
+.activities__title,
+.team__title,
+.clients__title {
   margin-bottom: 50px;
   text-align: center;
 
@@ -324,40 +326,30 @@ img {
 
 /* team section */
 
-/* .section-heading {
-  margin-bottom: 50px;
-  text-align: center;
-
-  color: var(--black-text);
-
-  font-weight: 700;
-  font-size: 36px;
-} */
-
 .team {
   background-color: var(--grey-button);
 }
 
-.team.list {
+.team__list {
   display: flex;
   gap: 30px;
 
   text-align: center;
 }
 
-.team-subsection {
+.team__item {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white);
 }
 
-.team-description {
+.team__descr {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   color: var(--black-text);
 
   font-weight: 500;
@@ -366,12 +358,31 @@ img {
   margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-.social-media-link {
+/* social media */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-media__item {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  color: var(--social-media-icon);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,23 +398,18 @@ img {
   transition-timing-function: var(--cubic);
 }
 
-.social-media-link:hover,
-.social-media-link:focus {
+.social-media__link:hover,
+.social-media__link:focus {
   background-color: var(--accent);
   color: var(--white);
 }
 
+.social-media__icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* clients */
-
-/* .section-heading {
-  margin-bottom: 50px;
-  text-align: center;
-
-  color: var(--black-text);
-
-  font-weight: 700;
-  font-size: 36px;
-} */
 
 .clients {
   display: flex;
@@ -549,7 +555,7 @@ img {
   color: var(--white);
 }
 
-.social-media-link.footer-icon {
+.social-media__link.footer-icon {
   color: var(--white);
 }
 
@@ -744,28 +750,6 @@ img {
 .icon.phone {
   width: 10px;
   height: 16px;
-}
-
-.social-media-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social-media-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-}
-
-.social-media-icon-bcg {
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-
-  color: var(--social-media-icon);
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* modal */
