@@ -539,7 +539,7 @@ img {
   color: var(--accent);
 }
 
-.footer-subheading {
+.footer__title {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -550,7 +550,7 @@ img {
   color: var(--white);
 }
 
-.social-media__link.footer-icon {
+.footer__icon {
   color: var(--white);
 }
 
