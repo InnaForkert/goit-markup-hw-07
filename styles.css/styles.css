@@ -285,16 +285,7 @@ img {
 
 /* activities section*/
 
-.activity {
-  position: relative;
-}
-
-.activities-photos {
-  display: flex;
-  gap: 30px;
-}
-
-.section-heading {
+.activities__title {
   margin-bottom: 50px;
   text-align: center;
 
@@ -304,7 +295,16 @@ img {
   font-size: 36px;
 }
 
-.activity-descr {
+.activities__list {
+  display: flex;
+  gap: 30px;
+}
+
+.activities__item {
+  position: relative;
+}
+
+.activities__descr {
   position: absolute;
   bottom: 0;
 
@@ -323,6 +323,16 @@ img {
 }
 
 /* team section */
+
+/* .section-heading {
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--black-text);
+
+  font-weight: 700;
+  font-size: 36px;
+} */
 
 .team {
   background-color: var(--grey-button);
@@ -384,6 +394,16 @@ img {
 }
 
 /* clients */
+
+/* .section-heading {
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--black-text);
+
+  font-weight: 700;
+  font-size: 36px;
+} */
 
 .clients {
   display: flex;
