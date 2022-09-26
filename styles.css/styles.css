@@ -136,11 +136,10 @@ img {
   background-color: var(--accent);
 }
 
-.accent,
 .nav__item--current,
 .nav__item--current:visited,
-.nav-item:hover,
-.nav-item:focus {
+.nav__item:hover,
+.nav__item:focus {
   color: var(--accent);
 }
 
