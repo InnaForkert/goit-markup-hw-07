@@ -411,18 +411,18 @@ img {
 
 /* clients */
 
-.clients {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,39 +440,39 @@ img {
   transition-timing-function: var(--cubic);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent);
   border-color: var(--accent);
   cursor: pointer;
 }
 
-.first-icon {
+.clients__first-icon {
   width: 41px;
   height: 47px;
 }
 
-.second-icon {
+.clients__second-icon {
   width: 40px;
   height: 52px;
 }
 
-.third-icon {
+.clients__third-icon {
   width: 43px;
   height: 41px;
 }
 
-.fourth-icon {
+.clients__fourth-icon {
   width: 84px;
   height: 41px;
 }
 
-.fifth-icon {
+.clients__fifth-icon {
   width: 63px;
   height: 45px;
 }
 
-.sixth-icon {
+.clients__sixth-icon {
   width: 94px;
   height: 44px;
 }
