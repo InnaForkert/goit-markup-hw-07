@@ -195,7 +195,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero-heading {
+.hero__heading {
   margin: 0 auto 30px;
   width: 696px;
 
@@ -208,7 +208,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.primary-btn {
+.hero__btn {
   padding: 10px 32px;
   min-width: 216px;
   text-align: center;
