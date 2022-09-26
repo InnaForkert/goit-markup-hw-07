@@ -486,75 +486,77 @@
     </footer>
     <div class="backdrop is-visually-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close>
-          <svg class="icon close">
+        <button class="modal__close" data-modal-close>
+          <svg class="icon modal__close-icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form action="#" class="modal-form" autocomplete="off">
-          <p class="form-heading">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="form-field">
-            <label for="name" class="form-label">Ім'я</label>
+        <form action="#" class="feedback-form" autocomplete="off">
+          <p class="feedback-form__heading">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
+          <div class="feedback-form__field">
+            <label for="name" class="feedback-form__label">Ім'я</label>
             <input
               type="name"
               name="name"
               id="name"
-              class="form-input"
+              class="feedback-form__input"
               required
             />
-            <svg class="form-icon">
+            <svg class="feedback-form__icon">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
+          <div class="feedback-form__field">
+            <label for="tel" class="feedback-form__label">Телефон</label>
             <input
               type="tel"
               name="telephone number"
               id="tel"
-              class="form-input"
+              class="feedback-form__input"
               required
             />
-            <svg class="form-icon">
+            <svg class="feedback-form__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label for="email" class="form-label">Пошта</label>
+          <div class="feedback-form__field">
+            <label for="email" class="feedback-form__label">Пошта</label>
             <input
               type="email"
               name="email"
               id="email"
-              class="form-input"
+              class="feedback-form__input"
               required
             />
-            <svg class="form-icon">
+            <svg class="feedback-form__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <label for="comment" class="form-label">Коментар</label>
+          <label for="comment" class="feedback-form__label">Коментар</label>
           <textarea
             name="comment"
             id="comment"
-            class="form-comment"
+            class="feedback-form__comment"
             placeholder="Введіть текст"
           ></textarea>
-          <div class="form-field">
+          <div class="feedback-form__field">
             <input
               type="checkbox"
               name="Terms and Conditions agreed"
               value="check"
-              class="checkbox"
+              class="feedback-form__checkbox"
               id="check"
               required
             />
-            <span class="checkbox-icon"></span>
-            <label for="check" class="terms-label">
+            <span class="feedback-form__checkbox-icon"></span>
+            <label for="check" class="feedback-form__terms-label">
               Погоджуюся з розсилкою та приймаю
-              <a href="#" class="terms-link">Умови договору</a></label
+              <a href="#" class="feedback-form__terms">Умови договору</a></label
             >
           </div>
-          <button class="modal-submit">Відправити</button>
+          <button class="feedback-form__submit">Відправити</button>
         </form>
       </div>
     </div>
