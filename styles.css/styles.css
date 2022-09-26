@@ -509,23 +509,18 @@ img {
   color: var(--white);
 }
 
-.footer-form {
-  margin-left: auto;
-}
-
-.footer-address {
+.address__item {
   display: block;
 }
 
-.footer-address:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link,
-.address-link:visited {
+.address__link,
+.address__link:visited {
   display: block;
   color: var(--white);
-  opacity: 0.6;
 
   text-decoration: none;
   font-weight: 400;
@@ -535,13 +530,12 @@ img {
   transition: color 250ms var(--cubic);
 }
 
-.first,
-.first:visited {
-  opacity: 1;
+.address__item + .address__item {
+  opacity: 0.6;
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent);
 }
 
@@ -613,6 +607,10 @@ img {
   display: inline;
   width: 24px;
   height: 24px;
+}
+
+.footer-form {
+  margin-left: auto;
 }
 
 /* portfolio page */
