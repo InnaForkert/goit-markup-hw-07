@@ -559,7 +559,7 @@ img {
   margin-left: auto;
 }
 
-.subscribe-input {
+.subscribe__input {
   display: block;
 
   width: 358px;
@@ -572,12 +572,12 @@ img {
   border-radius: 4px;
 }
 
-.subscribe-input::placeholder {
+.subscribe__input::placeholder {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-container {
+.subscribe__container {
   display: flex;
   gap: 10px;
 }
@@ -603,14 +603,10 @@ img {
   cursor: pointer;
 }
 
-.tg {
+.subscribe__icon {
   display: inline;
   width: 24px;
   height: 24px;
-}
-
-.footer-form {
-  margin-left: auto;
 }
 
 /* portfolio page */
