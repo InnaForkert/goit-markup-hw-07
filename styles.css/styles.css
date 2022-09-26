@@ -108,7 +108,8 @@ img {
   color: var(--black);
 }
 
-.page-header__logo--accent {
+.page-header__logo--accent,
+.page-footer__logo--accent {
   color: var(--accent);
 }
 
@@ -479,23 +480,23 @@ img {
 
 /* footer */
 
-.footer.container {
-  display: flex;
-
-  align-items: baseline;
-}
-
-.footer-list {
-  margin-right: 70px;
-}
-
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--black-background);
 }
 
-.footer-logo {
+.page-footer__container {
+  display: flex;
+
+  align-items: baseline;
+}
+
+.page-footer__list {
+  margin-right: 70px;
+}
+
+.page-footer__link {
   display: block;
   margin-bottom: 20px;
   width: 200px;
