@@ -10,14 +10,14 @@
     opacity: 1;
 
     transition: opacity 250ms $cubic;
-
-    &.is-visually-hidden .modal {
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
 }
 
-.is-hidden {
+.backdrop.is-visually-hidden .modal {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.is-visually-hidden {
     opacity: 0;
     pointer-events: none;
 }

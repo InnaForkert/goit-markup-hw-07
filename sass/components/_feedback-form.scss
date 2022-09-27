@@ -61,7 +61,8 @@
         transition: border 250ms $cubic;
 
         &:hover, &:focus {
-            @extend .feedback-form__input:hover
+            border: 1px solid $accent;
+            outline: none;
         }
 
         &::placeholder {

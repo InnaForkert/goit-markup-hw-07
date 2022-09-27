@@ -1,6 +1,7 @@
 .activities {
+
     &__title {
-        %title;
+        @extend %title;
     }
 
     &__list {
