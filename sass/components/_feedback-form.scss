@@ -73,10 +73,6 @@
         color: $accent;
     }
 
-    &__checkbox {
-        appearance: none;
-    }
-
     &__submit {
         display: block;
         margin: 30px auto 0 auto;
@@ -135,13 +131,16 @@
         transition: background-image 250ms $cubic;
     }
 
-}
+    &__checkbox {
+        appearance: none;
 
-.feedback-form__input:hover + .feedback-form__icon, 
-.feedback-form__input:focus + .feedback-form__icon {
-    fill: $accent;
-}
+        &:checked + &-icon {
+            background-image: url(../../images/icon-check.svg);
+        }
+    }
 
-.feedback-form__checkbox:checked+.feedback-form__checkbox-icon {
-    background-image: url(../../images/icon-check.svg);
- }
+    &__input:hover + &__icon, &__input:focus + &__icon {
+        fill: $accent;
+    }
+
+}

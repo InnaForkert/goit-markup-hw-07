@@ -54,7 +54,7 @@
             margin-bottom: 9px;
         }
 
-        & + .address__item {
+        & + & {
             opacity: 0.6;
         }
     }
