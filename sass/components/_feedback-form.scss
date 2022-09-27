@@ -40,10 +40,6 @@
         &:hover, &:focus {
             border: 1px solid $accent;
             outline: none;
-
-            & + .feedback-form___icon {
-                fill: $accent;
-            }
         }
     }
 
@@ -79,10 +75,6 @@
 
     &__checkbox {
         appearance: none;
-
-        &:checked+.feedback-form__checkbox-icon {
-                background-image: url(../images/icon-check.svg);
-            }
     }
 
     &__submit {
@@ -96,7 +88,7 @@
         letter-spacing: 0.06em;
         line-height: 1.88;
     
-        background-color: accent;
+        background-color: $accent;
         color: white;
         border-radius: 4px;
         border: none;
@@ -137,10 +129,19 @@
         height: 15px;
         margin-right: 8px;
     
-        background-image: url(../images/Vector.svg);
+        background-image: url(../../images/Vector.svg);
         background-size: contain;
     
         transition: background-image 250ms $cubic;
     }
 
 }
+
+.feedback-form__input:hover + .feedback-form__icon, 
+.feedback-form__input:focus + .feedback-form__icon {
+    fill: $accent;
+}
+
+.feedback-form__checkbox:checked+.feedback-form__checkbox-icon {
+    background-image: url(../../images/icon-check.svg);
+ }
