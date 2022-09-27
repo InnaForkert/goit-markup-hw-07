@@ -17,12 +17,6 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -539,7 +533,7 @@ img {
   color: var(--accent);
 }
 
-.footer__title {
+.page-footer__title {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -550,7 +544,7 @@ img {
   color: var(--white);
 }
 
-.footer__icon {
+.page-footer__icon {
   color: var(--white);
 }
 
