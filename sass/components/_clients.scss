@@ -1,4 +1,9 @@
 .clients {
+
+    &__title {
+        @extend %title
+    }
+    
     &__list {
         display: flex;
         justify-content: center;

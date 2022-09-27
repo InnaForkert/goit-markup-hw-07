@@ -417,7 +417,7 @@ img {
   height: 92px;
 }
 
-.client__link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;

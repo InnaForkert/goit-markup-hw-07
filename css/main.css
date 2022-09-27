@@ -60,7 +60,7 @@ img {
   display: block;
 }
 
-.activities__title {
+.clients__title, .team__title, .activities__title {
   margin-bottom: 50px;
   text-align: center;
   color: #212121;
@@ -116,6 +116,40 @@ img {
 .page-header__phone {
   width: 10px;
   height: 16px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.social-media__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media__link:hover, .social-media__link:focus {
+  background-color: #2196f3;
+  color: #fff;
+}
+.social-media__icon {
+  width: 20px;
+  height: 20px;
 }
 
 .page-footer {
@@ -381,40 +415,6 @@ img {
 .team__text {
   font-size: 16px;
   margin-bottom: 16px;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-}
-.social-media__item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #afb1b8;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.social-media__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  color: #afb1b8;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-media__link:hover, .social-media__link:focus {
-  background-color: #2196f3;
-  color: #fff;
-}
-.social-media__icon {
-  width: 20px;
-  height: 20px;
 }
 
 .clients__list {
