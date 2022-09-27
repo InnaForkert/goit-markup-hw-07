@@ -731,12 +731,12 @@ img {
   display: block;
 }
 
-.icon.mail {
+.page-header__mail {
   width: 16px;
   height: 12px;
 }
 
-.icon.phone {
+.page-header__phone {
   width: 10px;
   height: 16px;
 }
